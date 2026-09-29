@@ -1,0 +1,6 @@
+/target
+flamegraph*.svg
+*.txt
+/downloads
+/data
+alignment.sam

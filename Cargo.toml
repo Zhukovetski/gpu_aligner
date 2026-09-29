@@ -1,0 +1,24 @@
+[package]
+name = "gpu_aligner"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wgpu = "30.0"
+tokio = { version = "1", features = ["full"] }
+bytemuck = { version = "1", features = ["derive"] }
+env_logger = "0.11"
+pollster = "1"
+flume = "0.12"
+bio = "4"
+clap = { version = "4", features = ["derive"] }
+flate2 = { version = "1", features = ["zlib-rs"], default-features = false }
+rayon = "1"
+indicatif = "0.18"
+fxhash = "0.2"
+encase = "0.13"
+fearless_simd = "1.0.0"
+rustc-hash = "2.1"
+
+[profile.release]
+debug = true

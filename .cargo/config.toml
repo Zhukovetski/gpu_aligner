@@ -1,0 +1,13 @@
+[env]
+# Заставляем окно работать через стабильный X11 (XWayland) вместо глючного Wayland
+WINIT_UNIX_BACKEND = { value = "x11", force = true }
+
+# Включаем дискретную видеокарту NVIDIA
+__NV_PRIME_RENDER_OFFLOAD = { value = "1", force = true }
+__GLX_VENDOR_LIBRARY_NAME = { value = "nvidia", force = true }
+
+# ЖЕСТКО перебиваем системный фильтр Vulkan, чтобы он видел только NVIDIA
+VK_LOADER_DRIVERS_SELECT = { value = "*nvidia*", force = true }
+
+# Подсказка для wgpu использовать мощную карту
+WGPU_POWER_PREF = { value = "high", force = true }

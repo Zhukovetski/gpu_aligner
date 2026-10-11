@@ -13,10 +13,10 @@ The goal is to test whether low-end or older hardware (like 10-year-old laptops 
 
 A preliminary proof-of-concept run to validate whether the approach is viable on weak hardware:
 
-* **Hardware:** Intel HD Graphics 5600 / NVIDIA GTX 960M (Mobile, 2015)
+* **Hardware:** NVIDIA GTX 960M (Mobile, 2015)
 * **Dataset:** *E. coli* (~4.6M bp) vs. 21.4M reads (Illumina FASTQ, 5.7 GB)
-* **MVP Wall Time:** `~300 s` (rough end-to-end pipeline run)
-* **Throughput:** `~71,000` alignments/sec
+* **MVP Wall Time:** `~230 s` (rough end-to-end pipeline run)
+* **Throughput:** `~100,000` alignments/sec
 
 *Note: These are early sanity-check numbers from a minimal prototype pipeline; edge cases and proper error handling are still being worked out.*
 

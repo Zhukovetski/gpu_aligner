@@ -1,6 +1,11 @@
 /target
 flamegraph*.svg
-*.txt
+*.txt*
 /downloads
 /data
-alignment.sam
+*.sam
+*.fna.gz
+*.fastq
+*.fasta
+*.fastq.gz
+.vscode/
